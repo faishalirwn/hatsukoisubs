@@ -1,12 +1,12 @@
 <header>
-
-  <img src="/assets/img/hatsukoi-logo.svg" alt="logo" class="logo">
-
+  <div class="logo">
+    <img src="/assets/img/hatsukoi-logo.svg" alt="logo">
+  </div>
   <nav class="site-nav">
-      {% for link in site.links %}
-        <a class="page-link" target="{% if link.external %}_blank{% else %}_top{% endif %}"
-           href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{link.name}}</a>
-      {% endfor %}
+    {% for link in site.links %}
+      <a class="page-link" target="{% if link.external %}_blank{% else %}_top{% endif %}"
+         href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{link.name}}</a>
+    {% endfor %}
   </nav>
 
 </header>

@@ -21,3 +21,19 @@ h1, h2, h3, h4, h5, h6 {
   content: "";
   display: table;
   clear: both; }
+
+header {
+  font-family: "Lato", sans-serif; }
+  header .logo {
+    max-width: 200px;
+    margin: 15px auto 0 auto; }
+  header .site-nav {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0; }
+    header .site-nav .page-link {
+      text-decoration: none;
+      color: #404b4f;
+      margin-right: 20px; }
+      header .site-nav .page-link:hover, header .site-nav .page-link active {
+        border-bottom: 2px solid #404b4f; }
