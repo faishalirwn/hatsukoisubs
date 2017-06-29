@@ -13,7 +13,6 @@ body {
 
 /* Headers ============================================== */
 h1, h2, h3, h4, h5, h6 {
-  text-align: center;
   font-weight: bold; }
 
 /* Clear Fix ============================================== */
@@ -37,3 +36,32 @@ header {
       margin-right: 20px; }
       header .site-nav .page-link:hover, header .site-nav .page-link active {
         border-bottom: 2px solid #404b4f; }
+
+.white-box {
+  margin: 0 auto;
+  max-width: 700px;
+  background-color: #FFF;
+  border-radius: 20px; }
+  .white-box .wrapper {
+    padding: 16px; }
+
+.main-cover img {
+  margin: 0 auto;
+  width: 670px;
+  height: 220px;
+  border-radius: 20px; }
+
+.top-desc {
+  margin: 10px 0 10px 0;
+  color: #f67bd2;
+  border-bottom: 2px solid #f67bd2; }
+
+.post-list {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .post-list li .post-link {
+    text-decoration: none;
+    color: #404b4f; }
+  .post-list li .post-date {
+    float: right; }
