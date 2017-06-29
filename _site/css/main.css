@@ -72,3 +72,46 @@ header {
       float: right; }
     .post-list li:hover {
       background-color: #f9abe2; }
+
+.post-header {
+  text-align: center;
+  color: #404b4f; }
+  .post-header .post-title {
+    margin: 0; }
+  .post-header .post-meta {
+    margin: 0; }
+
+.post-content {
+  text-align: center; }
+  .post-content img {
+    width: 70%;
+    height: auto;
+    margin: 20px 0; }
+  .post-content p {
+    margin-bottom: 20px; }
+  .post-content .download-box {
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto; }
+    .post-content .download-box ul {
+      list-style: none;
+      padding: 0; }
+      .post-content .download-box ul li {
+        background: #404b4f;
+        border-bottom: 1px solid #FFF; }
+        .post-content .download-box ul li strong {
+          float: left;
+          background: #f67bd2;
+          width: 30%; }
+        .post-content .download-box ul li a {
+          color: #FFF;
+          text-decoration: none;
+          margin-right: 15px;
+          padding-right: 15px;
+          border-right: 1px solid #FFF; }
+          .post-content .download-box ul li a:nth-last-child(1) {
+            margin-right: 0;
+            padding-right: 0;
+            border: 0; }
+          .post-content .download-box ul li a:hover, .post-content .download-box ul li a active {
+            color: #cccccc; }
