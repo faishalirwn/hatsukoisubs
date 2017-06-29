@@ -1,0 +1,23 @@
+/* Reset Basic Elements ============================================== */
+html, body {
+  margin: 0;
+  padding: 0; }
+
+/* Basic Styling ============================================== */
+body {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #404b4f;
+  background-color: #f6b1c3; }
+
+/* Headers ============================================== */
+h1, h2, h3, h4, h5, h6 {
+  text-align: center;
+  font-weight: bold; }
+
+/* Clear Fix ============================================== */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
