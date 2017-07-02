@@ -40,7 +40,7 @@ header {
 
 .white-box {
   margin: 0 auto;
-  max-width: 700px;
+  max-width: 760px;
   background-color: #FFF;
   border-radius: 20px; }
   .white-box .wrapper {
@@ -48,7 +48,7 @@ header {
 
 .main-cover img {
   margin: 0 auto;
-  width: 670px;
+  width: 100%;
   height: 220px;
   border-radius: 20px; }
 
@@ -142,3 +142,24 @@ header {
     float: right; }
     .anime-list .anime-list-2 p {
       margin: 4px 0; }
+
+.relawan {
+  width: 100%; }
+  .relawan:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .relawan .relawan-1 {
+    width: 50%;
+    float: left; }
+    .relawan .relawan-1 h4 {
+      margin: 0; }
+    .relawan .relawan-1 ul {
+      margin: 0; }
+  .relawan .relawan-2 {
+    width: 50%;
+    float: right; }
+    .relawan .relawan-2 h4 {
+      margin: 0; }
+    .relawan .relawan-2 ul {
+      margin: 0; }

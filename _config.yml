@@ -12,10 +12,10 @@ links:
   - name:         Home
     url:          /
   - name:         Anime List
-    url:          /anime-list.html
+    url:          /anime-list
     external:     false
-  - name:         Archive
-    url:          /archive
+  - name:         About
+    url:          /about
     external:     false
     external:     false
   - name:         GitHub
