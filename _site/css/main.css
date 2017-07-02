@@ -89,29 +89,31 @@ header {
     margin: 20px 0; }
   .post-content p {
     margin-bottom: 20px; }
-  .post-content .download-box {
+  .post-content ul {
+    list-style: none;
+    padding: 20px;
+    margin: 0 auto;
     font-weight: bold;
-    width: 70%;
-    margin: 0 auto; }
-    .post-content .download-box ul {
-      list-style: none;
-      padding: 0; }
-      .post-content .download-box ul li {
-        background: #404b4f;
-        border-bottom: 1px solid #FFF; }
-        .post-content .download-box ul li strong {
-          float: left;
-          background: #f67bd2;
-          width: 30%; }
-        .post-content .download-box ul li a {
-          color: #FFF;
-          text-decoration: none;
-          margin-right: 15px;
-          padding-right: 15px;
-          border-right: 1px solid #FFF; }
-          .post-content .download-box ul li a:nth-last-child(1) {
-            margin-right: 0;
-            padding-right: 0;
-            border: 0; }
-          .post-content .download-box ul li a:hover, .post-content .download-box ul li a active {
-            color: #cccccc; }
+    width: 80%; }
+    .post-content ul li {
+      background: #404b4f;
+      border-bottom: 1px solid #FFF;
+      height: 2em;
+      line-height: 2em; }
+      .post-content ul li strong {
+        float: left;
+        background: #f67bd2;
+        width: 20%;
+        height: 100%; }
+      .post-content ul li a {
+        color: #FFF;
+        text-decoration: none;
+        margin-right: 15px;
+        padding-right: 15px;
+        border-right: 1px solid #FFF; }
+        .post-content ul li a:nth-last-child(1) {
+          margin-right: 0;
+          padding-right: 0;
+          border: 0; }
+        .post-content ul li a:hover, .post-content ul li a active {
+          color: #cccccc; }

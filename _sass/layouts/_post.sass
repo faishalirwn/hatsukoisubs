@@ -19,35 +19,36 @@
   p
     margin-bottom: 20px
 
-  .download-box
-    font-weight: bold
-    width: 70%
+  ul
+    list-style: none
+    padding: 20px
     margin: 0 auto
+    font-weight: bold
+    width: 80%
 
-    ul
-      list-style: none
-      padding: 0
+    li
+      background: $text-color
+      border-bottom: 1px solid #FFF
+      height: 2em
+      line-height: 2em
 
-      li
-        background: $text-color
-        border-bottom: 1px solid #FFF
+      strong
+        float: left
+        background: $pink
+        width: 20%
+        height: 100%
 
-        strong
-          float: left
-          background: $pink
-          width: 30%
+      a
+        color: #FFF
+        text-decoration: none
+        margin-right: 15px
+        padding-right: 15px
+        border-right: 1px solid #FFF
 
-        a
-          color: #FFF
-          text-decoration: none
-          margin-right: 15px
-          padding-right: 15px
-          border-right: 1px solid #FFF
+        &:nth-last-child(1)
+          margin-right: 0
+          padding-right: 0
+          border: 0
 
-          &:nth-last-child(1)
-            margin-right: 0
-            padding-right: 0
-            border: 0
-
-          &:hover, active
-            color: darken(#FFF, 20%)
+        &:hover, active
+          color: darken(#FFF, 20%)
