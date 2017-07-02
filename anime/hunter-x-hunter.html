@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="anime-meta">
+  <img src="/assets/img/anime-thumb.jpg" alt="Hiatus x Hiatus">
+  <p>Genre :</p>
+  <p>Status :</p>
+  <p>Sinopsis :</p>
+</div>
+
+<h4 class="top-desc">Link Download</h4>
+<div class="anime-link">
+  <ul class="post-list">
+    {% for post in site.posts %}
+    <li>
+        <a class="post-link" href="{{ site.url }}{{ post.url}}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date_to_long_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

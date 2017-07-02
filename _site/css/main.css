@@ -34,15 +34,18 @@ header {
     header .site-nav .page-link {
       text-decoration: none;
       color: #404b4f;
-      margin-right: 20px; }
-      header .site-nav .page-link:hover, header .site-nav .page-link active {
-        border-bottom: 2px solid #404b4f; }
+      margin-right: 30px; }
+      header .site-nav .page-link:hover, header .site-nav .page-link:active {
+        border-bottom: 1px solid #404b4f; }
 
 .white-box {
   margin: 0 auto;
   max-width: 760px;
   background-color: #FFF;
-  border-radius: 20px; }
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.5); }
   .white-box .wrapper {
     padding: 16px; }
 
@@ -84,8 +87,8 @@ header {
 .post-content {
   text-align: center; }
   .post-content img {
-    width: 70%;
-    height: auto;
+    max-width: 400px;
+    max-height: 226px;
     margin: 20px 0; }
   .post-content p {
     margin-bottom: 20px; }
@@ -132,16 +135,21 @@ header {
     content: "";
     display: table;
     clear: both; }
+  .anime-list a {
+    display: table;
+    text-decoration: none;
+    color: #404b4f; }
+    .anime-list a:hover {
+      color: #6e8087; }
   .anime-list .anime-list-1 {
     width: 50%;
     float: left; }
-    .anime-list .anime-list-1 p {
-      margin: 4px 0; }
   .anime-list .anime-list-2 {
     width: 50%;
     float: right; }
-    .anime-list .anime-list-2 p {
-      margin: 4px 0; }
+
+.about {
+  margin-bottom: 50px; }
 
 .relawan {
   width: 100%; }
@@ -163,3 +171,17 @@ header {
       margin: 0; }
     .relawan .relawan-2 ul {
       margin: 0; }
+
+.anime-meta {
+  margin-bottom: 30px; }
+  .anime-meta:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .anime-meta img {
+    float: left;
+    max-width: 225px;
+    max-height: 318px;
+    margin-right: 20px; }
+  .anime-meta p {
+    margin: 0 0 3px 0; }

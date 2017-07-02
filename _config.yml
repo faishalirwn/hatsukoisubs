@@ -18,9 +18,9 @@ links:
     url:          /about
     external:     false
     external:     false
-  - name:         GitHub
-    url:          http://github.com/kuoa
-    external:     true
+  - name:         aw
+    url:          /anime/hunter-x-hunter
+    external:     false
 
 # Build settings
 markdown: kramdown
