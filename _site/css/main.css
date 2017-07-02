@@ -111,9 +111,34 @@ header {
         margin-right: 15px;
         padding-right: 15px;
         border-right: 1px solid #FFF; }
-        .post-content ul li a:nth-last-child(1) {
+        .post-content ul li a:last-child {
           margin-right: 0;
           padding-right: 0;
           border: 0; }
         .post-content ul li a:hover, .post-content ul li a active {
           color: #cccccc; }
+
+.page-title {
+  text-align: center;
+  color: #f67bd2;
+  border-bottom: 2px solid #f67bd2;
+  margin: 0;
+  padding-bottom: 10px; }
+
+.anime-list {
+  width: 100%;
+  margin-top: 20px; }
+  .anime-list:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .anime-list .anime-list-1 {
+    width: 50%;
+    float: left; }
+    .anime-list .anime-list-1 p {
+      margin: 4px 0; }
+  .anime-list .anime-list-2 {
+    width: 50%;
+    float: right; }
+    .anime-list .anime-list-2 p {
+      margin: 4px 0; }
