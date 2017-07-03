@@ -3,10 +3,16 @@ Very nice fansub theme
 =============================
 Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
 
-## Notes
+#### Notes
 - Usahakan memakai url external untuk gambar, kecuali asset site itu sendiri karena github repo kecil mang
 - Category itu **case-sensitive** jadi caps dalam satu huruf dan tidak memakai caps berpengaruh dalam link
 - **Jangan memakai space** dalam category pakai "-" tanpa tanda kutip untuk memisahkan kata dalam category
+
+#### Ukuran Assets
+- logo: max-width 200px, height bebas
+- cover utama/banner: width 100%, height 220px
+- thumbnail anime: max-width 225px, max-height 318px
+- thumbnail post: width 70%, height 226px
 
 ## Pemakaian
 

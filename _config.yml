@@ -1,7 +1,6 @@
 # Site settings
 title: Hatsukoi #website title
-url: #https://kuoa.github.io # the base hostname & protocol for your site
-baseurl: # the sub-path of your site, e.g. /blog/
+url: #contoh: https://kuoa.github.io # the base hostname & protocol for your site
 
 disqus_shortname: # leave empty if you don't want comments
 google_analytics: #if set to "true" modify the google_analytycs.html, set to false otherwise
