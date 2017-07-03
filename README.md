@@ -1,12 +1,12 @@
 # Hatsukoi
 Very nice fansub theme
 =============================
-Jika ada apa-apa contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
+Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
 
 ## Notes
-- Usahakan memakai url untuk gambar, kecuali asset site itu sendiri karena github repo kecil mang
-- Category itu case-sensitive jadi caps dalam satu huruf dan tidak memakai caps berpengaruh dalam link
-- Jangan memakai space dalam category pakai "-" tanpa tanda kutip untuk memisahkan kata dalam category
+- Usahakan memakai url external untuk gambar, kecuali asset site itu sendiri karena github repo kecil mang
+- Category itu **case-sensitive** jadi caps dalam satu huruf dan tidak memakai caps berpengaruh dalam link
+- **Jangan memakai space** dalam category pakai "-" tanpa tanda kutip untuk memisahkan kata dalam category
 
 ## Pemakaian
 
@@ -67,5 +67,26 @@ Di directory **_data/relawan.yml** ubah value di bawah
   name: ARU (Nama)
   role: Web Designer (Role)
 ```
+
+#### Menambah page
+
+1. Di directory **pages/** buat file dengan format **judul-page.html**
+2. **Tambahkan** kode di bawah ini di paling atas filenya
+```shell
+---
+title: About (Judul Page)
+permalink: about.html (Nama File Pagenya) Judul page bisa berbeda ini nya
+---
+```
+
+#### Menambah Navigation untuk Page
+
+1. Masuk ke **_includes/header.html**
+2. Tambah kode ini ke dalam file **di bawah tag a terakhir**
+```shell
+<a class="page-link {% if page.url == '/faq.html' %}current{% endif %}" target="_top" href="{{ site.url }}/faq">FAQ</a>
+```
+- ubah **/faq.html** dengan **directory pagenya** jika page memiliki front matter **permalink** ubah seperti contoh di atas, **tidak perlu direktori lengkapnya**, jika tidak ada **permalink** ubah seperti **/pages/faq.html**
+- ubah **{{ site.url }}/faq** dengan **{{ site.url }}/nama-page** jika ada **permalink** front matternya, jika tidak ada pakai direktori pagenya seperti **{{ site.url }}/pages/faq**
 
 Semua ini berpacu pada aturan Jekyll pada [Jekyll Docs](http://jekyllrb.com/docs/)
