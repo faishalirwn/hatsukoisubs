@@ -36,6 +36,8 @@ header {
       margin-right: 30px;
       padding: 5px;
       transition: all 0.25s; }
+      header .site-nav .page-link:last-child {
+        margin-right: 0; }
       header .site-nav .page-link:hover {
         background: #FFF;
         border-radius: 10%;
@@ -101,6 +103,12 @@ header {
   .pagination span {
     margin-right: 4px; }
 
+@media screen and (max-width: 500px) {
+  .main-cover img {
+    height: 160px; }
+
+  .post-list li .post-date {
+    display: none; } }
 .post-header {
   text-align: center;
   color: #404b4f; }
@@ -140,6 +148,9 @@ header {
         .post-content .dl-box .dl-link a:hover, .post-content .dl-box .dl-link a active {
           color: #cccccc; }
 
+@media screen and (max-width: 500px) {
+  .post-content img {
+    height: 160px; } }
 .footer {
   text-align: center; }
   .footer p {
@@ -205,6 +216,17 @@ header {
       margin: 0;
       font-size: 14px; }
 
+@media screen and (max-width: 650px) {
+  .relawan:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .relawan .folks img {
+    height: 150px; }
+  .relawan .folks .folks-meta h4 {
+    font-size: 12px; }
+  .relawan .folks .folks-meta p {
+    font-size: 10px; } }
 .anime-meta {
   margin-bottom: 30px; }
   .anime-meta:after {
@@ -218,3 +240,12 @@ header {
     margin-right: 20px; }
   .anime-meta p {
     margin: 0 0 3px 0; }
+
+@media screen and (max-width: 500px) {
+  .anime-meta img {
+    float: none;
+    display: block;
+    margin: 0 auto; }
+
+  .anime-link .post-list li .post-date {
+    display: none; } }
