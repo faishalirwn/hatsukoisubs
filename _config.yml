@@ -29,6 +29,9 @@ defaults:
 paginate: 12
 paginate_path: "/page:num/"
 
+#Timezone
+timezone: Asia/Jakarta
+
 # Build settings
 markdown: kramdown
 markdown_ext:  markdown,mkdown,mkdn,mkd,md
