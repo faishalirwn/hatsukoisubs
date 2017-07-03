@@ -1,5 +1,4 @@
 ---
-layout: default
 title: About
 permalink: about.html
 ---
@@ -11,19 +10,13 @@ permalink: about.html
 <h4 class="top-desc">Relawan</h4>
 
 <div class="relawan">
-  <div class="relawan-1">
-    <h4>Ahay</h4>
-    <ul>
-      <li>ARU</li>
-      <li>ARU</li>
-    </ul>
+  {% for relawan in site.data.relawan %}
+  <div class="folks">
+    <img src="{{ relawan.img }}">
+    <div class="folks-meta" style="background-color:{{ relawan.color }};">
+      <h4>{{ relawan.name }}</h4>
+      <p>{{ relawan.role }}</p>
+    </div>
   </div>
-
-  <div class="relawan-2">
-    <h4>Ahay</h4>
-    <ul>
-      <li>ARU</li>
-      <li>ARU</li>
-    </ul>
-  </div>
+  {% endfor %}
 </div>

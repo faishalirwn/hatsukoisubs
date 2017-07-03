@@ -1,12 +1,15 @@
 <header>
   <div class="logo">
-    <a href="/"><img src="/assets/img/hatsukoi-logo.svg" alt="logo"></a>
+    <a href="/"><img src="{{ site.data.settings.logo }}" alt="logo"></a>
   </div>
   <nav class="site-nav">
-    {% for link in site.links %}
-      <a class="page-link" target="{% if link.external %}_blank{% else %}_top{% endif %}"
-         href="{% unless link.external %}{{ site.url }}{% endunless %}{{ link.url }}">{{link.name}}</a>
-    {% endfor %}
+    <a class="page-link {% if page.url == '/index.html' %}current{% endif %}" target="_top" href="{{ site.url }}">Home</a>
+    <a class="page-link {% if page.url == '/anime-list.html' %}current{% endif %}"
+    target="_top" href="{{ site.url }}/anime-list">Anime List</a>
+    <a class="page-link {% if page.url == '/about.html' %}current{% endif %}"
+    target="_top" href="{{ site.url }}/about">About</a>
+    <a class="page-link {% if page.url == '/anime/hunter-x-hunter.html' %}current{% endif %}"
+    target="_top" href="{{ site.url }}/faq">FAQ</a>
   </nav>
 
 </header>

@@ -15,11 +15,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-weight: bold; }
 
-/* Clear Fix ============================================== */
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
+/* Display Table Just In Case ============================ */
+.table {
+  display: table; }
 
 header {
   font-family: "Lato", sans-serif;
@@ -33,10 +31,23 @@ header {
     margin: 10px 0; }
     header .site-nav .page-link {
       text-decoration: none;
+      border-radius: 10%;
       color: #404b4f;
-      margin-right: 30px; }
-      header .site-nav .page-link:hover, header .site-nav .page-link:active {
-        border-bottom: 1px solid #404b4f; }
+      margin-right: 30px;
+      padding: 5px;
+      transition: all 0.25s; }
+      header .site-nav .page-link:hover {
+        background: #FFF;
+        border-radius: 10%;
+        -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+        -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+        box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1); }
+    header .site-nav .current {
+      background: #FFF;
+      border-radius: 10%;
+      -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+      -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1);
+      box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.1); }
 
 .white-box {
   margin: 0 auto;
@@ -76,6 +87,20 @@ header {
     .post-list li:hover {
       background-color: #f9abe2; }
 
+.pagination {
+  text-align: center;
+  margin-top: 15px;
+  color: #f67bd2;
+  font-style: normal; }
+  .pagination a {
+    text-decoration: none;
+    color: #f67bd2;
+    margin-right: 4px; }
+    .pagination a:hover {
+      color: #f9abe2; }
+  .pagination span {
+    margin-right: 4px; }
+
 .post-header {
   text-align: center;
   color: #404b4f; }
@@ -87,39 +112,44 @@ header {
 .post-content {
   text-align: center; }
   .post-content img {
-    max-width: 400px;
-    max-height: 226px;
+    width: 70%;
+    height: 226px;
     margin: 20px 0; }
   .post-content p {
     margin-bottom: 20px; }
-  .post-content ul {
-    list-style: none;
-    padding: 20px;
-    margin: 0 auto;
-    font-weight: bold;
-    width: 80%; }
-    .post-content ul li {
-      background: #404b4f;
-      border-bottom: 1px solid #FFF;
-      height: 2em;
-      line-height: 2em; }
-      .post-content ul li strong {
-        float: left;
-        background: #f67bd2;
-        width: 20%;
-        height: 100%; }
-      .post-content ul li a {
+  .post-content .dl-box {
+    background: #404b4f;
+    max-width: 60%;
+    margin: 0 auto; }
+    .post-content .dl-box h4 {
+      background: #f67bd2;
+      margin: 0;
+      padding: 5px 0; }
+    .post-content .dl-box .dl-link {
+      padding: 5px 0; }
+      .post-content .dl-box .dl-link a {
         color: #FFF;
         text-decoration: none;
         margin-right: 15px;
         padding-right: 15px;
         border-right: 1px solid #FFF; }
-        .post-content ul li a:last-child {
+        .post-content .dl-box .dl-link a:last-child {
           margin-right: 0;
           padding-right: 0;
           border: 0; }
-        .post-content ul li a:hover, .post-content ul li a active {
+        .post-content .dl-box .dl-link a:hover, .post-content .dl-box .dl-link a active {
           color: #cccccc; }
+
+.footer {
+  text-align: center; }
+  .footer p {
+    font-size: 12px;
+    color: #6e8087; }
+    .footer p a {
+      text-decoration: none;
+      color: #4b585d; }
+      .footer p a:hover {
+        color: #7b8d94; }
 
 .page-title {
   text-align: center;
@@ -141,36 +171,39 @@ header {
     color: #404b4f; }
     .anime-list a:hover {
       color: #6e8087; }
-  .anime-list .anime-list-1 {
-    width: 50%;
-    float: left; }
-  .anime-list .anime-list-2 {
-    width: 50%;
-    float: right; }
 
 .about {
   margin-bottom: 50px; }
 
-.relawan {
-  width: 100%; }
-  .relawan:after {
-    content: "";
-    display: table;
-    clear: both; }
-  .relawan .relawan-1 {
-    width: 50%;
-    float: left; }
-    .relawan .relawan-1 h4 {
+.relawan:after {
+  content: "";
+  display: table;
+  clear: both; }
+.relawan .folks {
+  width: 24%;
+  position: relative;
+  float: left;
+  margin-right: 7px;
+  margin-bottom: 10px; }
+  .relawan .folks img {
+    width: 100%;
+    height: 200px; }
+  .relawan .folks .folks-meta {
+    position: absolute;
+    background: #FFF;
+    bottom: 5%;
+    right: 3px;
+    text-align: center;
+    border-radius: 5%;
+    padding: 0 5px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    box-shadow: inset 0px 0px 5px 1px rgba(0, 0, 0, 0.75); }
+    .relawan .folks .folks-meta h4 {
       margin: 0; }
-    .relawan .relawan-1 ul {
-      margin: 0; }
-  .relawan .relawan-2 {
-    width: 50%;
-    float: right; }
-    .relawan .relawan-2 h4 {
-      margin: 0; }
-    .relawan .relawan-2 ul {
-      margin: 0; }
+    .relawan .folks .folks-meta p {
+      margin: 0;
+      font-size: 14px; }
 
 .anime-meta {
   margin-bottom: 30px; }

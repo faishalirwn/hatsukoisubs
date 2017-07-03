@@ -6,21 +6,29 @@ baseurl: # the sub-path of your site, e.g. /blog/
 disqus_shortname: # leave empty if you don't want comments
 google_analytics: #if set to "true" modify the google_analytycs.html, set to false otherwise
 
+# Default things, very nice
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Hatsukoi"
+  -
+    scope:
+      path: "pages"
+    values:
+      layout: "default"
+  -
+    scope:
+      path: "anime"
+    values:
+      layout: "anime"
 
-# Links settings
-links:
-  - name:         Home
-    url:          /
-  - name:         Anime List
-    url:          /anime-list
-    external:     false
-  - name:         About
-    url:          /about
-    external:     false
-    external:     false
-  - name:         aw
-    url:          /anime/hunter-x-hunter
-    external:     false
+# Pagination
+paginate: 12
+paginate_path: "/page:num/"
 
 # Build settings
 markdown: kramdown
@@ -28,3 +36,6 @@ markdown_ext:  markdown,mkdown,mkdn,mkd,md
 
 redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
+
+# plugins
+plugins: [jekyll-paginate]

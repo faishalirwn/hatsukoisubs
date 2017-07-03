@@ -1,17 +1,16 @@
 ---
-layout: default
 title: Anime List
 permalink: anime-list.html
 ---
 <h1 class="page-title">{{ page.title }}</h1>
 
 <div class="anime-list">
-  <div class="anime-list-1">
-    <a href="#">&#9672; Hunter x Hunter</a>
-    <a href="#">&#9672; Hunter x Hunter</a>
-  </div>
-  <div class="anime-list-2">
-    <a href="#">&#9672; Hiatus x Hiatus</a>
-    <a href="#">&#9672; Hiatus x Hiatus</a>
-  </div>
-</div>
+  {% capture categories %}
+    {% for category in site.categories %}
+      {{ category[0] }}
+    {% endfor %}
+  {% endcapture %}
+  {% assign sortedcategory = categories | split:' ' | sort %}
+  {% for category in sortedcategory %}
+      <a href="/anime/{{ category }}/">&#9672; {{ category | replace: '-',' ' }}</a>
+  {% endfor %}

@@ -1,0 +1,22 @@
+---
+layout: default
+---
+<div class="anime-meta">
+  <img src="{{ page.thumb }}">
+  <h4 class="top-desc table">{{ page.category | replace: '-', ' ' }}</h4>
+  <p>Genre : {{ page.genre }}</p>
+  <p>Status : {{ page.status }}</p>
+  <p>Sinopsis : {{ page.sinopsis }}</p>
+</div>
+
+<h4 class="top-desc">Link Download</h4>
+<div class="anime-link">
+  <ul class="post-list">
+    {% for post in site.categories[page.category] %}
+    <li>
+        <a class="post-link" href="{{ site.url }}{{ post.url}}">{{ post.title }}</a>
+        <span class="post-date">{{ post.date | date_to_long_string }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
