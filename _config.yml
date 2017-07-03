@@ -38,4 +38,7 @@ redcarpet:
   extensions: ["tables", "autolink", "strikethrough", "space_after_headers", "fenced_code_blocks"]
 
 # plugins
-plugins: [jekyll-paginate]
+plugins_dir: [jekyll-paginate]
+
+# gems
+gems: [jekyll-paginate]
