@@ -12,6 +12,6 @@ permalink: anime-list.html
   {% endcapture %}
   {% assign sortedcategory = categories | split:' ' | sort %}
   {% for category in sortedcategory %}
-      <a href="/anime/{{ category }}/">&#9672; {{ category | replace: '-',' ' }}</a>
+      <a href="/anime/{{ category }}">&#9672; {{ category | replace: '-',' ' }}</a>
   {% endfor %}
 </div>
