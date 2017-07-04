@@ -1,5 +1,4 @@
 # Hatsukoi
-Very nice fansub theme
 =============================
 Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
 
