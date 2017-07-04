@@ -1,5 +1,4 @@
-# Hatsukoi
-=============================
+# Hatsukoi Fansubs
 Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
 
 #### Notes
