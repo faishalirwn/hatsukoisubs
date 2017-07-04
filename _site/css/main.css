@@ -9,7 +9,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   color: #404b4f;
-  background-color: #f6b1c3; }
+  background-color: #febacc; }
 
 /* Headers ============================================== */
 h1, h2, h3, h4, h5, h6 {
@@ -35,6 +35,9 @@ header {
       color: #404b4f;
       margin-right: 30px;
       padding: 5px;
+      -webkit-transition: all 0.25s;
+      -moz-transition: all 0.25s;
+      -o-transition: all 0.25s;
       transition: all 0.25s; }
       header .site-nav .page-link:last-child {
         margin-right: 0; }
@@ -65,7 +68,7 @@ header {
 .main-cover img {
   margin: 0 auto;
   width: 100%;
-  height: 220px;
+  height: 280px;
   border-radius: 20px; }
 
 .top-desc {
@@ -121,7 +124,7 @@ header {
   text-align: center; }
   .post-content img {
     width: 70%;
-    height: 226px;
+    height: 280px;
     margin: 20px 0; }
   .post-content p {
     margin-bottom: 20px; }
@@ -185,6 +188,9 @@ header {
 
 .about {
   margin-bottom: 50px; }
+  .about p {
+    text-indent: 30px;
+    text-align: justify; }
 
 .relawan:after {
   content: "";
@@ -249,3 +255,14 @@ header {
 
   .anime-link .post-list li .post-date {
     display: none; } }
+h1.error {
+  text-align: center;
+  color: #FFF; }
+
+h2.error-bot {
+  text-align: center;
+  color: #FFF; }
+
+img.error-img {
+  margin: 0 auto;
+  width: 50%; }
