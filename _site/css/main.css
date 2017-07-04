@@ -83,14 +83,19 @@ header {
   margin: 0;
   padding: 0; }
   .post-list li {
-    padding-left: 5px; }
+    padding-left: 5px;
+    padding-right: 5px; }
     .post-list li .post-link {
       text-decoration: none;
-      color: #404b4f; }
+      color: #404b4f;
+      transition: 0.25s; }
+      .post-list li .post-link:hover {
+        background: #dde2e4; }
     .post-list li .post-date {
       float: right; }
     .post-list li:hover {
-      background-color: #f9abe2; }
+      background-color: #f9abe2;
+      border-radius: 5px; }
 
 .pagination {
   text-align: center;
@@ -128,6 +133,11 @@ header {
     margin: 20px 0; }
   .post-content p {
     margin-bottom: 20px; }
+    .post-content p a {
+      text-decoration: none;
+      color: #293033; }
+      .post-content p a:hover {
+        color: #6e8087; }
   .post-content .dl-box {
     background: #404b4f;
     max-width: 60%;

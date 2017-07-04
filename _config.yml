@@ -1,5 +1,6 @@
 # Site settings
-title: Hatsukoi #website title
+title: Hatsukoisubs — Fansub yang membuatmu jatuh cinta #website title
+description: Fansub yang membuatmu jatuh cinta
 url: #contoh: https://kuoa.github.io # the base hostname & protocol for your site
 
 google_analytics: #if set to "true" modify the google_analytycs.html, set to false otherwise
