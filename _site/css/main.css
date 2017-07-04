@@ -255,11 +255,11 @@ header {
 
   .anime-link .post-list li .post-date {
     display: none; } }
-h1.error {
+.error {
   text-align: center;
   color: #FFF; }
 
-h2.error-bot {
+.error-bot {
   text-align: center;
   color: #FFF; }
 
