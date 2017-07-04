@@ -30,3 +30,4 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/sass,jekyll,windows
+_site/css/main.css
