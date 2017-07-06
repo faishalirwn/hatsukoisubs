@@ -46,3 +46,4 @@ plugins_dir: [jekyll-paginate]
 gems:
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-sitemap
