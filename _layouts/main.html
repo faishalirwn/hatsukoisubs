@@ -1,5 +1,6 @@
 ---
 layout: default
+comments: true
 ---
 <div class="main-cover">
   <img src="{{ site.data.settings.cover }}" alt="Main-Cover">
@@ -9,10 +10,10 @@ layout: default
 
 {{ content }}
 
-{% if site.google_analytics %}
-    {% include google_analytics.html %}
+{% if page.comments  %}
+ {% include disqus.html %}
 {% endif %}
 
-{% if site.disqus_shortname %}
-   {% include disqus.html %}
+{% if site.google_analytics %}
+    {% include google_analytics.html %}
 {% endif %}
