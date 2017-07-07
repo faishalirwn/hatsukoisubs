@@ -26,33 +26,36 @@
       &:hover
         color: $text-hover
 
-  .dl-box
-    background: $text-color
-    max-width: 60%
-    margin: 0 auto
+  .dl-box-wrap
+    margin-bottom: 65px
 
-    h4
-      background: $primary-color
-      margin: 0
-      padding: 5px 0
+    .dl-box
+      background: $text-color
+      max-width: 60%
+      margin: 0 auto
 
-    .dl-link
-      padding: 5px 0
+      h4
+        background: $primary-color
+        margin: 0
+        padding: 5px 0
 
-      a
-        color: #FFF
-        text-decoration: none
-        margin-right: 15px
-        padding-right: 15px
-        border-right: 1px solid #FFF
+      .dl-link
+        padding: 5px 0
 
-        &:last-child
-          margin-right: 0
-          padding-right: 0
-          border: 0
+        a
+          color: #FFF
+          text-decoration: none
+          margin-right: 15px
+          padding-right: 15px
+          border-right: 1px solid #FFF
 
-        &:hover, active
-          color: darken(#FFF, 20%)
+          &:last-child
+            margin-right: 0
+            padding-right: 0
+            border: 0
+
+          &:hover, active
+            color: darken(#FFF, 20%)
 
 @media screen and (max-width: 500px)
   .post-content

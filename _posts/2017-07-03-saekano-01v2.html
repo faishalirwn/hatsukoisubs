@@ -21,21 +21,22 @@ Kara Efek : Joni-kun<br>
 TS : meeyeepee [Hana Subs]<br>
 Encoder : meeyeepee [Hana Subs]</p>
 
-
-<div class="dl-box">
-  <h4>480p</h4>
-  <div class="dl-link">
-    {% for link in page.480p %}
-    <a href="{{ link.link }}">{{ link.web }}</a>
-    {% endfor %}
+<div class="dl-box-wrap">
+  <div class="dl-box">
+    <h4>480p</h4>
+    <div class="dl-link">
+      {% for link in page.480p %}
+      <a href="{{ link.link }}">{{ link.web }}</a>
+      {% endfor %}
+    </div>
   </div>
-</div>
 
-<div class="dl-box">
-  <h4>720p</h4>
-  <div class="dl-link">
-    {% for link in page.720p %}
-    <a href="{{ link.link }}">{{ link.web }}</a>
-    {% endfor %}
+  <div class="dl-box">
+    <h4>720p</h4>
+    <div class="dl-link">
+      {% for link in page.720p %}
+      <a href="{{ link.link }}">{{ link.web }}</a>
+      {% endfor %}
+    </div>
   </div>
 </div>
