@@ -1,6 +1,5 @@
 ---
 layout: default
-comments: true
 ---
 <header class="post-header">
    <h1 class="post-title">{{ page.title }}</h1>
@@ -16,9 +15,7 @@ comments: true
 
 </section>
 
-{% if page.comments  %}
- {% include disqus.html %}
-{% endif %}
+{% include disqus.html %}
 
 {% if site.google_analytics %}
   {% include google_analytics.html %}
