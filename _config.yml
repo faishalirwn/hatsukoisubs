@@ -3,7 +3,7 @@ title: Hatsukoi Fansubs | Fansub yang membuatmu jatuh cinta &#10084; #website ti
 description: Fansub yang membuatmu jatuh cinta
 url: #contoh: https://hatsukoisubs.github.io # the base hostname & protocol for your site
 
-google_analytics: true #if set to "true" modify the google_analytycs.html, set to false otherwise
+google_analytics: false #if set to "true" modify the google_analytycs.html, set to false otherwise
 
 # Default things, very nice
 defaults:

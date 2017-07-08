@@ -11,6 +11,21 @@ body
   line-height: 1.5
   color: $text-color
   background-color: $bg-color
+  background-image: url(/gambar/site/left.png), url(/gambar/site/right.png)
+  background-position: left 0px bottom 75%, right 0px bottom 75%
+  background-repeat: no-repeat
+
+@media screen and (max-width: 1215px)
+  body
+    background-image: none
+
+@media screen and (min-width: 1600px)
+  body
+    background-position: left 15% bottom 75%, right 15% bottom 75%
+
+@media screen and (min-width: 2200px)
+  body
+    background-position: left 25% bottom 75%, right 25% bottom 75%
 
 
 /* Headers ============================================== */
