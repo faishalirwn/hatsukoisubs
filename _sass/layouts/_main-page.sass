@@ -16,7 +16,7 @@
 
 .post-list
   list-style: none
-  margin: 0 0 40px 0
+  margin: 0 0 20px 0
   padding: 0
 
   li
@@ -40,20 +40,34 @@
 
 .pagination
   text-align: center
-  margin-top: 15px
+  margin-bottom: 30px
   color: $primary-color
   font-style: normal
 
   a
     text-decoration: none
-    color: $primary-color
-    margin-right: 4px
+    color: #FFF
+    background-color: $primary-color
+    margin-right: 2px
+    padding: 3px 7px 3px 7px
+    border-radius: 5px
 
     &:hover
-      color: $accent-color
+      background-color: $accent-color
 
   span
-    margin-right: 4px
+    margin-right: 2px
+    color: #FFF
+    background-color: $primary-color
+    padding: 3px 7px 3px 7px
+    border-radius: 5px
+
+  .page-active
+    margin-right: 2px
+    color: #FFF
+    background-color: $accent-color
+    padding: 3px 7px 3px 7px
+    border-radius: 5px
 
 @media screen and (max-width: 600px)
   .main-cover
