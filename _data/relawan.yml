@@ -32,3 +32,8 @@
   color: pink
   name: Ryuzake
   role: Checker
+
+- img: https://hatsukoisubs.github.io/gambar/staf/Junko1.jpg
+  color: #optional, default white
+  name: Junko1
+  role: Karaoke FX
