@@ -6,4 +6,29 @@
 - img: http://s3.zerochan.net/Queen.%28Persona.5%29.240.2087594.jpg
   color: #optional, default white
   name: ARU
-  role: Web Designer
+  role: Web Designer dan Design Graphics
+
+- img: https://hatsukoisubs.github.io/gambar/staf/Banana.jpg
+  color: pink
+  name: Banana
+  role: Typesetter
+  
+- img: https://hatsukoisubs.github.io/gambar/staf/JoshMe1.jpg
+  color: #optional, default white
+  name: JoshMe1
+  role: Karaoke FX
+  
+- img: https://hatsukoisubs.github.io/gambar/staf/sasageyo.jpg
+  color: pink
+  name: Sasageyo
+  role: Typesetter
+  
+- img: https://hatsukoisubs.github.io/gambar/staf/Aniversia.jpg
+  color: #optional, default white
+  name: Aniversia20
+  role: Karaoke FX
+
+- img: https://hatsukoisubs.github.io/gambar/staf/Ryuzake.jpg
+  color: pink
+  name: Ryuzake
+  role: Checker
