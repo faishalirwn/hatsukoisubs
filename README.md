@@ -1,12 +1,12 @@
 # Hatsukoi Fansubs
 Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebook.com/MuhammadFaisal21)
 
-#### Notes
+## Notes
 - Usahakan memakai url external untuk gambar, kecuali asset site itu sendiri karena github repo kecil mang
 - Category itu **case-sensitive** jadi caps dalam satu huruf dan tidak memakai caps berpengaruh dalam link
 - **Jangan memakai space** dalam category pakai "-" tanpa tanda kutip untuk memisahkan kata dalam category
 
-#### Ukuran Assets
+## Ukuran Assets
 - logo: max-width 200px, height bebas
 - cover utama/banner: width 100%, height 220px
 - thumbnail anime: max-width 225px, max-height 318px
@@ -14,11 +14,11 @@ Jika ada apa-apa atau ada yang kurang, contact [Orang Tampan](https://www.facebo
 
 ## Pemakaian
 
-#### Mengubah Logo dan Cover Utama
+## Mengubah Logo dan Cover Utama
 
 Di directory **_data/settings.yml** ubah value **logo** dan **cover**
 
-#### Membuat Post
+## Membuat Post
 
 1. Buat file dalam  folder **_post** dengan format **YEAR-MONTH-DAY-title.html**
 2. **Masukkan** kode di bawah ini dalam file postnya di paling atas, ubah sesuka hati kecilmu
@@ -49,7 +49,7 @@ date: 2017-07-03 19:45:01 +07:00 (Waktu Post) dengan format YYYY-MM-DD HH:MM:SS 
 ---
 ```
 
-#### Menambahkan anime
+## Menambahkan anime
 
 1. Buat file dalam  folder **anime/** dengan format **Nama-Anime.html**, ingat **ubah space dengan '-' tanpa tanda kutip**
 2. **Masukkan** kode di bawah ini dalam file postnya di paling atas, ubah sesuka hati kecilmu
@@ -63,7 +63,7 @@ category: Hunter-x-Hunter (Nama Anime) Samakan degan category postnya
 ---
 ```
 
-#### Menambah jumlah relawan dalam page about
+## Menambah jumlah relawan dalam page about
 
 Di directory **_data/relawan.yml** ubah value di bawah
 ```shell
@@ -73,7 +73,7 @@ Di directory **_data/relawan.yml** ubah value di bawah
   role: Web Designer (Role)
 ```
 
-#### Menambah page
+## Menambah page
 
 1. Di directory **pages/** buat file dengan format **judul-page.html**
 2. **Tambahkan** kode di bawah ini di paling atas filenya
