@@ -2,8 +2,8 @@
 layout: default
 ---
 <div class="anime-meta">
-  <img src="{{ page.thumb }}">
-  <h4 class="top-desc table">{{ page.category | replace: '-', ' ' }}</h4>
+  <img src="{{ page.thumb }}" alt="{{ page.category | replace: '-', ' ' }}">
+  <h1 class="top-desc anime-title">{{ page.category | replace: '-', ' ' }}</h1>
   <p>Genre : {{ page.genre }}</p>
   <p>Status : {{ page.status }}</p>
   <p>Sinopsis : {{ page.sinopsis }}</p>

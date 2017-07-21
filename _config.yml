@@ -1,9 +1,13 @@
 # Site settings
 title: Hatsukoi Fansubs | Fansub yang membuatmu jatuh cinta &#10084; #website title
 description: Fansub yang membuatmu jatuh cinta
-url: #contoh: https://hatsukoisubs.github.io # the base hostname & protocol for your site
+url: https://www.hatsukoisubs.net # the base hostname & protocol for your site
 
 google_analytics: UA-101869891-1
+
+# Facebook, for SEO
+facebook:
+  publisher: https://www.facebook.com/hatsukoi.indonesia
 
 # Default things, very nice
 defaults:
@@ -47,3 +51,5 @@ gems:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
+
+exclude: [node_modules]
