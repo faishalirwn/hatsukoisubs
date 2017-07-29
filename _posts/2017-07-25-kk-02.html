@@ -1,7 +1,8 @@
 ---
 title: Konbini Kareshii 02 Subtitle Indonesia
 category: Konbini-Kareshii
-thumb: https://hatsukoisubs.github.io/gambar/post/Konbini-Kareshii-02.jpg
+embed: https://drive.google.com/file/d/0B6kL6w2zMVZURHZrZmdibm11MGc/preview
+thumb:
 date: 2017-07-25 06:55:24 +07:00
 480p:
   - link: https://drive.google.com/open?id=0B6kL6w2zMVZUSDliM2tPYkROWWc
@@ -33,7 +34,13 @@ date: 2017-07-25 06:55:24 +07:00
     web: ClicknUpload
 ---
 
+{% if page.embed %}
+<iframe src="{{ page.embed }}" width="640" height="480"></iframe>
+{% endif %}
+
+{% if page.thumb %}
 <img src="{{ page.thumb }}">
+{% endif %}
 
 <p>
 Masih sempet ngejar, Wkwkwkwk...<br>
@@ -64,7 +71,7 @@ Kolaborasi indah bersama <b><a href="http://anifansia.net/">Anifansia</a></b>! :
     {% endfor %}
    </div>
 </div>
-  
+
 <div class="dl-box">
   <h4>1080p</h4>
   <div class="dl-link">

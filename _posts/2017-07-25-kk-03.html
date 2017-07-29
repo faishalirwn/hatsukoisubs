@@ -1,7 +1,8 @@
 ---
 title: Konbini Kareshii 03 Subtitle Indonesia
 category: Konbini-Kareshii
-thumb: https://hatsukoisubs.github.io/gambar/post/Konbini-Kareshii-03.jpg
+embed: https://drive.google.com/file/d/0B6kL6w2zMVZUNElJS3VhX0RZM1k/preview
+thumb:
 date: 2017-07-25 11:55:24 +07:00
 480p:
   - link: https://drive.google.com/open?id=0B6kL6w2zMVZUT3FiclZadUUtRGc
@@ -26,7 +27,13 @@ date: 2017-07-25 11:55:24 +07:00
     web: Zippyshare
 ---
 
+{% if page.embed %}
+<iframe src="{{ page.embed }}" width="640" height="480"></iframe>
+{% endif %}
+
+{% if page.thumb %}
 <img src="{{ page.thumb }}">
+{% endif %}
 
 <p>
 Kolaborasi indah bersama <b><a href="http://anifansia.net/">Anifansia</a></b>! :D<br>
@@ -55,7 +62,7 @@ Kolaborasi indah bersama <b><a href="http://anifansia.net/">Anifansia</a></b>! :
     {% endfor %}
    </div>
 </div>
-  
+
 <div class="dl-box">
   <h4>1080p</h4>
   <div class="dl-link">

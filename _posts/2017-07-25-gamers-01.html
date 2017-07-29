@@ -1,7 +1,8 @@
 ---
 title: Gamers!! 01 Subtitle Indonesia
 category: Gamers
-thumb: https://hatsukoisubs.github.io/gambar/post/Gamers-01.jpg
+embed: https://drive.google.com/file/d/0B94eA-uvBkq4dVczU2p0SnYtX1k/preview
+thumb:
 date: 2017-07-25 06:52:09 +07:00
 480p:
   - link: https://drive.google.com/open?id=0B94eA-uvBkq4RHBjcks3clA2OFU
@@ -11,7 +12,13 @@ date: 2017-07-25 06:52:09 +07:00
     web: Google Drive
 ---
 
+{% if page.embed %}
+<iframe src="{{ page.embed }}" width="640" height="480"></iframe>
+{% endif %}
+
+{% if page.thumb %}
 <img src="{{ page.thumb }}">
+{% endif %}
 
 <p>Apdet sambil belajar di kelas :v<br>
 Kolaborasi pertama bersama <strong><a href="http://iasubs-rev.blogspot.com/">IASubs</a></strong><br>
