@@ -26,7 +26,7 @@ Di directory **_data/settings.yml** ubah value **logo** dan **cover**
 ---
 title: Hunter x Hunter 160 Subtitle Indonesia (Judul)
 category: Hunter-x-Hunter (Nama Anime) Jangan pake space, ganti dengan "-" tanpa tanda kutip
-thumb: url-gambar.jpg (Thumbnail Post)
+thumb: url-gambar.jpg (Thumbnail Post, kosongkan kalo ga ada thumb)
 date: 2017-07-03 19:45:01 +07:00 (Waktu Post) dengan format YYYY-MM-DD HH:MM:SS +/-TTTT
 480p: (Bisa berapa aja)
   - link: www.google.com
